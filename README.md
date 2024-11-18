@@ -49,6 +49,12 @@ We use **Metaflow** in combination with **AWS** as the data store and **SageMake
 The KNN-based model trained in this project is exported to a **TensorFlow** model using **Keras**. The model is then deployed to **SageMaker** using the `TensorFlowModel` abstraction, which allows us to run the model at scale with minimal configuration.
 
 ---
+### Logs
+![Capture d'écran 2024-11-18 123116](https://github.com/user-attachments/assets/59eb3932-f6d5-4fde-b130-853f993d273e)
+![Capture d'écran 2024-11-18 123109](https://github.com/user-attachments/assets/91d1cfbd-a202-489a-8ca1-268c574f3d3e)
+![Capture d'écran 2024-11-18 123100](https://github.com/user-attachments/assets/ca927c01-e4f5-4a43-85a0-5e1b2554a302)
+![Capture d'écran 2024-11-18 123035](https://github.com/user-attachments/assets/7ad3b4f0-48a5-4802-82c6-3b728be383e9)
+
 
 ### Key Technologies:
 
@@ -57,3 +63,4 @@ The KNN-based model trained in this project is exported to a **TensorFlow** mode
 - **KNN**: Algorithm used for prediction in the embedding space.
 - **Metaflow**: Workflow management system used for model development and deployment.
 - **AWS SageMaker**: Platform for deploying machine learning models.
+  
