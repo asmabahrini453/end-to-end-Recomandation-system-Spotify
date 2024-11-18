@@ -1,0 +1,23 @@
+nohup: ignoring input
+2024-11-18 11:47:37.752370: I tensorflow_serving/model_servers/server.cc:77] Building single TensorFlow model file config:  model_name: playlist-recs-model model_base_path: /home/workspace/workspaces/recsys/playlist-recs-model
+2024-11-18 11:47:37.752603: I tensorflow_serving/model_servers/server_core.cc:481] Adding/updating models.
+2024-11-18 11:47:37.752634: I tensorflow_serving/model_servers/server_core.cc:610]  (Re-)adding model: playlist-recs-model
+2024-11-18 11:47:37.935798: I tensorflow_serving/core/basic_manager.cc:771] Successfully reserved resources to load servable {name: playlist-recs-model version: 1}
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1731930457.935874   14954 loader_harness.cc:71] Approving load for servable version {name: playlist-recs-model version: 1}
+I0000 00:00:1731930457.935904   14954 loader_harness.cc:79] Loading servable version {name: playlist-recs-model version: 1}
+2024-11-18 11:47:37.935949: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:83] Reading SavedModel from: /home/workspace/workspaces/recsys/playlist-recs-model/1
+2024-11-18 11:47:37.937160: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:52] Reading meta graph with tags { serve }
+2024-11-18 11:47:37.937204: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:147] Reading SavedModel debug info (if present) from: /home/workspace/workspaces/recsys/playlist-recs-model/1
+I0000 00:00:1731930457.968926   14954 mlir_graph_optimization_pass.cc:401] MLIR V1 optimization pass is not enabled
+2024-11-18 11:47:37.969543: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:236] Restoring SavedModel bundle.
+2024-11-18 11:47:38.018481: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:220] Running initialization op on SavedModel bundle at path: /home/workspace/workspaces/recsys/playlist-recs-model/1
+2024-11-18 11:47:38.038112: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:466] SavedModel load for tags { serve }; Status: success: OK. Took 102164 microseconds.
+2024-11-18 11:47:38.038561: I tensorflow_serving/servables/tensorflow/saved_model_warmup_util.cc:82] No warmup data file found at /home/workspace/workspaces/recsys/playlist-recs-model/1/assets.extra/tf_serving_warmup_requests
+I0000 00:00:1731930458.138022   14954 loader_harness.cc:100] Successfully loaded servable version {name: playlist-recs-model version: 1}
+2024-11-18 11:47:38.205713: I tensorflow_serving/model_servers/server_core.cc:502] Finished adding/updating models
+2024-11-18 11:47:38.205796: I tensorflow_serving/model_servers/server.cc:121] Using InsecureServerCredentials
+2024-11-18 11:47:38.205810: I tensorflow_serving/model_servers/server.cc:388] Profiler service is enabled
+2024-11-18 11:47:38.207101: I tensorflow_serving/model_servers/server.cc:423] Running gRPC ModelServer at 0.0.0.0:8500 ...
+2024-11-18 11:47:38.209888: I tensorflow_serving/model_servers/server.cc:444] Exporting HTTP/REST API at:localhost:8501 ...
+[evhttp_server.cc : 250] NET_LOG: Entering the event loop ...

@@ -1,0 +1,59 @@
+{
+  "meta": {},
+  "data": {
+    "id": "recsys",
+    "title": "Recommender Systems Tutorial",
+    "defaultFilePath": "./recsys-1.ipynb",
+    "showPrimaryView": true,
+    "numbered": true,
+    "sections": [
+      {
+        "title": "Understand the Data",
+        "description": "Meet the problem and do a preliminary analysis of the dataset.",
+        "path": "./recsys-1.ipynb"
+      },
+      {
+        "title": "Query Faster with DuckDB",
+        "description": "Use a hyper-performant database for analytics called DuckDB.",
+        "path": "./data_flow.py",
+        "action": {
+          "type": "run",
+          "value": "./data_flow.py"
+        }
+      },
+      {
+        "title": "Build a Recommender Model",
+        "description": "Use the data prepared with DuckDB to train an embedding model.",
+        "path": "./embed_and_model.py",
+        "action": {
+          "type": "run",
+          "value": "./embed_and_model.py"
+        }
+      },
+      {
+        "title": "Tune Hyperparameters",
+        "description": "Tune hyperparameters of the embedding process in parallel.",
+        "path": "./recsys_tuning_flow.py",
+        "action": {
+          "type": "run",
+          "value": "./recsys_tuning_flow.py"
+        }
+      },
+      {
+        "title": "Analyze Results and Iterate",
+        "description": "Use Metaflow's Client API to fetch results and analyze performance.",
+        "path": "./recsys-5.ipynb"
+      },
+      {
+        "title": "Make Real-time Predictions",
+        "description": "Deploy the best model using TensorFlow Serving.",
+        "path": "./recsys_deploy.py",
+        "action": {
+          "type": "run",
+          "value": "./recsys_deploy.py"
+        }
+      }
+    ],
+    "links": []
+  }
+}
